@@ -10,12 +10,10 @@ Java application that accepts a URL as input and scrapes the page referenced by 
 ###### 2. Data Extraction and analysis.
 ###### 3. Persist the result data to local PostgreSQL server.
 
-
 -----------------
 
-
-
 ###### 1. Fetch a Webpage from given InputURL
+
     I use jsoup a Java library to fetch the webpage referenced by the InputURL. Below is the example code 
     snippet scraping contents from the internet.
     ```
@@ -53,13 +51,14 @@ Java application that accepts a URL as input and scrapes the page referenced by 
     
     After ward, I truncated it to lesser group as below.
 
-![Current Conceptual Design](pics/laterConceptual.png "Current Conceptual design")
+   ![Current Conceptual Design](pics/laterConceptual.png "Current Conceptual design")
     
     Below is the current QR diagram.
 
-![Current QR Diagram](pics/CurrentQRDiagram.png "Current QR Diagram")
+   ![Current QR Diagram](pics/CurrentQRDiagram.png "Current QR Diagram")
 
 
+-----------------
 
 ##### How to run the program:
 
@@ -79,6 +78,7 @@ credentials. Below is the screenshot of my `persistence.xml`
 
 
 
+-----------------
 
 ##### ScreenShot of outputs in local postgresql:
 
@@ -99,7 +99,7 @@ credentials. Below is the screenshot of my `persistence.xml`
     ![Media Table](pics/MediaTable.png "Media Table")
     
     
-    
+-----------------
     
 ##### Drectory Structure:
 
@@ -116,6 +116,7 @@ credentials. Below is the screenshot of my `persistence.xml`
 - __Main:__ Main program.
 
 
+-----------------
 
 ##### Library used:
 
