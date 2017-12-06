@@ -4,7 +4,7 @@ Java application that accepts a URL as input and scrapes the page referenced by 
 ---
 
 
-#### Steps Performed
+### Steps Performed
 
 ###### 1. Fetch a Webpage from given InputURL.
 ###### 2. Data Extraction and analysis.
@@ -12,7 +12,7 @@ Java application that accepts a URL as input and scrapes the page referenced by 
 
 -----------------
 
-###### 1. Fetch a Webpage from given InputURL
+##### 1. Fetch a Webpage from given InputURL
 
     I use jsoup a Java library to fetch the webpage referenced by the InputURL. Below is the example code 
     snippet scraping contents from the internet.
@@ -22,7 +22,7 @@ Java application that accepts a URL as input and scrapes the page referenced by 
     ```
 
 
-###### 2. Data Extraction and analysis
+##### 2. Data Extraction and analysis
 
     Onece we have conetent, we need to filter out all the HTML tags. I again use
     jsoup library to grab the desired texts.
@@ -40,7 +40,7 @@ Java application that accepts a URL as input and scrapes the page referenced by 
 
 
 
-###### 3. Persist the result data to local PostgreSQL server.
+##### 3. Persist the result data to local PostgreSQL server.
 
     Besides word frequency count, I tried to analyze different elements that's present in the webpage.
     As there's lots of elements in the webpage, it was kinda hard for me to decide what group of elements need 
@@ -60,7 +60,7 @@ Java application that accepts a URL as input and scrapes the page referenced by 
 
 -----------------
 
-##### How to run the program:
+#### How to run the program:
 
 1. Create a database on local server. For instance, I created database name `wepagedata` 
 in the example below.
@@ -80,7 +80,7 @@ credentials. Below is the screenshot of my `persistence.xml`
 
 -----------------
 
-##### ScreenShot of outputs in local postgresql:
+#### ScreenShot of outputs in local postgresql:
 
 1. web_page table where we store info about the webpage we did scraping.
 
@@ -101,7 +101,7 @@ credentials. Below is the screenshot of my `persistence.xml`
     
 -----------------
     
-##### Drectory Structure:
+#### Drectory Structure:
 
 - __dao:__ It's the package for data access object - manage the tables such as intert, select, delete operations.
 
@@ -118,7 +118,7 @@ credentials. Below is the screenshot of my `persistence.xml`
 
 -----------------
 
-##### Library used:
+#### Library used:
 
 - [jsoup](https://jsoup.org/): To make request, fetch the data and extract HTML tags and attributes.
 
