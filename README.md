@@ -84,7 +84,7 @@ credentials. Below is the screenshot of my `persistence.xml`
 
 1. web_page table where we store info about the webpage we did scraping.
 
-    ![web_page Table](pics/webpageTable.png "web_page Table)
+    ![web_page Table](pics/webpageTable.png "web_page Table")
 
 2. word table where we store all the words and it's frequency.
 
